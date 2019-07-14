@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loging and registration</title>
+	<link rel="stylesheet" type="text/css" href="pengunjung.css">
+</head>
+<body>
+	<div class="login">
+		<div class="form">
+			<form class="register">
+				<input type="text" placeholder="username">
+				<input type="text" placeholder="password">
+				<input type="text" placeholder="e-mail">
+				<button>Create</button>
+				<p class="message">Already Registered? <a href="#">Login</a></p>
+			</form>
+
+			<form class="login-form">
+				<input type="text" placeholder="username">
+				<input type="password" placeholder="password">
+				<button><a href="booking.html">login</button>
+				<p class="message">No Registered? <a href="#"><strong>Register</strong></a></p>
+
+			</form>
+		</div>
+	</div>
+
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+
+	<script type="text/javascript">
+		$('.message a').click(function(){
+			$('form').animate({height: "toggle", opacity:"toggle"},"slow")
+		});
+	</script>
+</body>
+</html>
